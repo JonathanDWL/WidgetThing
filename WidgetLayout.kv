@@ -1,26 +1,42 @@
-BoxLayoutExample
+StackLayoutExample
+
+<StackLayoutExample>
+    Button:
+        text: "Blah"
+        size_hint: 0.2, 0.2
+    Button:
+        text: "Googa"
+        size_hint: 0.2, 0.2
+    Button:
+        text: "Splam"
+        size_hint: 1, 0.5
 
 <BoxLayoutExample>
-    orientation: "horizontal"
+    orientation: "vertical"
     spacing: 5
     Button:
         text: "Glungulate"
         color: 1, 0.5, 0.5
-        size_hint: 0.5, 1
+        size_hint: 1, 0.5
     Button:
         text: "Baxinify"
         color: 0.5, 1, 0.5
-        size_hint: 2, 1
-    Button:
-        text: "Zorpinate"
-        color: 0.5, 0.5, 1
-        size_hint: 1, 0.5
-        pos_hint: {"y":0.5}
-    Button:
-        text: "Fringate"
-        color: 1, 1, 0.5
-        size_hint: 1, 0.5
-        pos_hint: {"y":0}
+        size_hint: 1, 2
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: 5
+        Button:
+            text: "Zorpinate"
+            color: 0.5, 0.5, 1
+        BoxLayout:
+            orientation: "vertical"
+            spacing: 5
+            Button:
+                text: "Fringate"
+                color: 1, 1, 0.5
+            Button:
+                text: "Gwompify"
+                color: 1, 0.5, 1
 
 <MainWidget>
     Button:
