@@ -1,15 +1,77 @@
-StackLayoutExample
+LayoutAssignment
 
-<StackLayoutExample>
+<LayoutAssignment>
+    orientation: "vertical"
+    spacing: "10dp"
+    Label:
+        text: "The Gleeby Board"
+        size_hint: 1, 0.15
+        color: 1, 0.5, 0.5
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: "15dp"
+        BoxLayout:
+            orientation: "horizontal"
+            spacing: "10dp"
+            Button:
+                text: "Zoop"
+                color: 1, 0.5, 1
+                background_color: 1, 0, 1
+            Button:
+                text: "Gloop"
+                color: 1, 0.5, 1
+                background_color: 1, 0, 1
+        BoxLayout:
+            orientation: "vertical"
+            spacing: "10dp"
+            Button:
+                text: "Splam"
+                size_hint: 1, 1.2
+                color: 0.5, 0.5, 1
+                background_color: 0, 0, 1
+            Button:
+                text: "Squam"
+                color: 0.5, 0.5, 1
+                background_color: 0, 0, 1
+            Button:
+                text: "Stram"
+                color: 0.5, 0.5, 1
+                background_color: 0, 0, 1
+        NumBoard:
+            size_hint: 1.2, 1
+            spacing: "10dp"
+
+
+<ScrollViewExample@ScrollView>
+    StackLayoutExample
+        size_hint: 1, None
+        height: self.minimum_height
+
+<GridLayoutExample>
+    rows: 2
     Button:
-        text: "Blah"
-        size_hint: 0.2, 0.2
+        text: "Grah"
     Button:
-        text: "Googa"
-        size_hint: 0.2, 0.2
+        text: "Zooga"
     Button:
-        text: "Splam"
-        size_hint: 1, 0.5
+        text: "Squam"
+    Button:
+        text: "Eeby"
+    Button:
+        text: "Gleeby"
+    Button:
+        text: "Deeby"
+
+#<StackLayoutExample>
+    #Button:
+        #text: "Blah"
+        #size_hint: 0.2, 0.2
+    #Button:
+        #text: "Googa"
+        #size_hint: 0.2, 0.2
+    #Button:
+        #text: "Splam"
+        #size_hint: 1, 0.5
 
 <BoxLayoutExample>
     orientation: "vertical"
